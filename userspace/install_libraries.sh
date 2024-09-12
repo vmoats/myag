@@ -1,0 +1,82 @@
+#!/bin/bash -e
+
+export DEBIAN_FRONTEND=noninteractive
+
+# Add armhf as supported architecture
+dpkg --add-architecture armhf
+
+apt-fast update && apt-fast install --no-install-recommends -yq \
+    libacl1:armhf \
+    libasan6-armhf-cross \
+    libatomic1-armhf-cross \
+    libattr1:armhf \
+    libaudit1:armhf \
+    libblkid1:armhf \
+    libc6-armhf-cross \
+    libc6-dev \
+    libc6-dev-armhf-cross \
+    libc6-dev:armhf \
+    libc6:armhf \
+    libcairo2:armhf \
+    libcap2:armhf \
+    libdrm2:armhf \
+    libegl-dev \
+    libegl1 \
+    libevdev2:armhf \
+    libexpat1:armhf \
+    libffi-dev \
+    libffi8:armhf \
+    libfontconfig1:armhf \
+    libfreetype6:armhf \
+    libgbm1:armhf \
+    libgcc-11-dev-armhf-cross \
+    libgdbm-dev \
+    libgles-dev \
+    libgles1 \
+    libgles2 \
+    libglib2.0-0t64:armhf \
+    libgomp1-armhf-cross \
+    libgudev-1.0-0:armhf \
+    libi2c-dev \
+    libinput-bin:armhf \
+    libinput-dev:armhf \
+    libgtk2.0-dev \
+    libinput10:armhf \
+    libjpeg-dev:armhf \
+    libjpeg-turbo8-dev:armhf \
+    libjpeg-turbo8:armhf \
+    libjpeg8-dev:armhf \
+    libjpeg8:armhf \
+    libkmod2:armhf \
+    libmtdev1t64:armhf \
+    libncursesw5-dev \
+    libnss-myhostname \
+    libpam0g-dev:armhf \
+    libpam0g:armhf \
+    libpcre3:armhf \
+    libpixman-1-0:armhf \
+    libpng16-16t64:armhf \
+    libselinux1:armhf \
+    libsqlite3-dev \
+    libssl-dev \
+    libstdc++6-armhf-cross \
+    libstdc++6:armhf \
+    libubsan1-armhf-cross \
+    libudev-dev:armhf \
+    libudev1:armhf \
+    libuuid1:armhf \
+    libwacom9:armhf \
+    libx11-6:armhf \
+    libxau6:armhf \
+    libxcb-render0:armhf \
+    libxcb-shm0:armhf \
+    libxcb1:armhf \
+    libxdmcp6:armhf \
+    libxext6:armhf \
+    libxkbcommon0:armhf \
+    libxml2:armhf \
+    libxrender1:armhf \
+    linux-libc-dev-armhf-cross \
+    linux-libc-dev:armhf \
+    zlib1g-dev \
+    zlib1g:armhf
